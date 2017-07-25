@@ -1,0 +1,3 @@
+/*C11*/SET SCHEMA PUBLIC
+INSERT INTO ALUNO VALUES('beee9fcf-edd9-4c2c-b7c1-06b3d191fec4',NULL,0,'jgjgjf',0,'2017-07-24 21:44:17.072000','fuufuf',6.0E0,'ugjfu','Gugu')
+COMMIT
