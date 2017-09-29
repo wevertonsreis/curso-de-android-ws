@@ -3,6 +3,7 @@ package br.com.alura.agenda.retrofit;
 import java.io.IOException;
 
 import br.com.alura.agenda.service.AlunoService;
+import br.com.alura.agenda.service.DispositivoService;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
@@ -30,5 +31,9 @@ public class RetrofitInicializador {
 
     public AlunoService getAlunoService() {
         return retrofit.create(AlunoService.class);
+    }
+
+    public DispositivoService getDispositivoService() {
+        return retrofit.create(DispositivoService.class);
     }
 }

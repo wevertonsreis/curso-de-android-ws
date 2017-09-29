@@ -13,6 +13,15 @@ public class Aluno implements Serializable {
     private String site;
     private Double nota;
     private String caminhoFoto;
+    private Integer desativado;
+
+    public Integer getDesativado() {
+        return desativado;
+    }
+
+    public void setDesativado(Integer desativado) {
+        this.desativado = desativado;
+    }
 
     public String getId() {
         return id;
@@ -73,5 +82,9 @@ public class Aluno implements Serializable {
     @Override
     public String toString() {
         return getId() + " - " + getNome();
+    }
+
+    public boolean isDesativado() {
+        return desativado == 1;
     }
 }
